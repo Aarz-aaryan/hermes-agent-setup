@@ -1,15 +1,6 @@
 ---
 name: obsidian
-description: "Obsidian note-taking integration."
-version: 1.0.0
----
-
-# Obsidian
-
-Obsidian vault integration for note-taking.
-
-## Operations
-
-- Read/write notes
-- Create links
-- Search vault
+description: Read, search, and create notes in the Obsidian vault.
+...
+# Obsidian Vault
+...

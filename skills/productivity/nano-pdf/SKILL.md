@@ -1,9 +1,7 @@
 ---
 name: nano-pdf
-description: "NanoPDF: minimalist PDF viewer and tools."
-version: 1.0.0
----
-
-# NanoPDF
-
-Minimalist PDF viewer and tools.
+description: "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts)."
+...
+# nano-pdf
+Edit PDFs using natural-language instructions.
+...

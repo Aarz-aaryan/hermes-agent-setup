@@ -1,0 +1,6 @@
+---
+name: excalidraw
+description: "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)."
+...
+# Excalidraw Diagram Skill
+...
