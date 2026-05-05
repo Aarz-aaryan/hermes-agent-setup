@@ -1,35 +1,20 @@
-# Profile: aarz - Primary user profile
-# Composio API key REDACTED - replace YOUR_COMPOSIO_API_KEY with actual key
-
-# Composio Configuration for this profile
-composio:
-  api_key: YOUR_COMPOSIO_API_KEY
-  connection_active: true
-  account_id: coup_hurricane_dal_analytical
-
-# Agent Configuration
-agent:
-  name: aarz
-  model: claude-sonnet-4-5-20250929
-  max_tokens: 8192
-  temperature: 0.7
-
-# Tool Configuration
-tools:
-  enabled:
-    - github
-    - gmail
-    - google_calendar
-    - notion
-    - terminal
-    - filesystem
-
-# Memory Configuration
-memory:
-  enabled: true
-  persist_directory: /home/Aarz/.hermes/profiles/aarz/memories
-
-# Session Configuration
-sessions:
-  persist: true
-  directory: /home/Aarz/.hermes/profiles/aarz/sessions
+model:
+  default: MiniMax-M2.7
+  provider: minimax
+  base_url: https://api.minimax.io/anthropic
+skills:
+  external_dirs:
+  - ~/.hermes/skills
+onboarding:
+  seen:
+    tool_progress_prompt: true
+    busy_input_prompt: true
+approvals:
+  mode: false
+mcp_servers:
+  composio:
+    url: https://connect.composio.dev/mcp
+    headers:
+      x-consumer-api-key: YOUR_COMPOSIO_API_KEY
+    connect_timeout: 60
+    timeout: 180
