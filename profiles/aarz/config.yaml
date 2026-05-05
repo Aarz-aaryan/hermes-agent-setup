@@ -1,0 +1,6 @@
+# aarz profile config - contains sensitive API keys (redacted)
+# Composio API key has been replaced with YOUR_COMPOSIO_API_KEY
+# Restore from original and re-add your actual key
+
+# Profile: aarz - Primary user profile
+# Contains Composio MCP connection details
