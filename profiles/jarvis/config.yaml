@@ -1,12 +1,19 @@
-# Profile: jarvis - Assistant-style profile
-
-profile:
-  name: jarvis
-  description: Assistant profile for daily tasks
-
-tools:
-  enabled:
-    - terminal
-    - filesystem
-    - web_search
-    - calendar
+model:
+  default: gpt-5.2-codex
+  provider: copilot
+  base_url: https://api.githubcopilot.com
+skills:
+  external_dirs:
+  - ~/.hermes/skills
+onboarding:
+  seen:
+    tool_progress_prompt: true
+approvals:
+  mode: false
+mcp_servers:
+  composio:
+    url: https://connect.composio.dev/mcp
+    headers:
+      x-consumer-api-key: YOUR_COMPOSIO_API_KEY
+    connect_timeout: 60
+    timeout: 180

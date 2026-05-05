@@ -1,13 +1,38 @@
-# Profile: bymax - Secondary profile
-
-# Basic Configuration
-profile:
-  name: bymax
-  description: Secondary profile for general assistance
-
-# Tool Configuration
-tools:
-  enabled:
-    - terminal
-    - filesystem
-    - web_search
+model:
+  default: qwen2.5-coder:14b
+  provider: custom
+  base_url: http://localhost:11434/v1
+  api_key: ollama
+  context_length: 262144
+  env:
+    CUDA_VISIBLE_DEVICES: '1'
+agent:
+  reasoning_effort: none
+custom_providers:
+- name: ollama
+  base_url: http://localhost:11434/v1
+  api_key: ollama
+  models:
+    qwen2.5-coder:14b:
+      context_length: 262144
+    qwen3.5-9b-tools:
+      context_length: 32768
+skills:
+  external_dirs:
+  - ~/.hermes/skills
+mcp_servers:
+  composio:
+    url: https://connect.composio.dev/mcp
+    headers:
+      x-consumer-api-key: YOUR_COMPOSIO_API_KEY
+    connect_timeout: 60
+    timeout: 180
+auxiliary:
+  compression:
+    provider: custom
+    base_url: http://localhost:11434/v1
+    model: qwen2.5:14b
+    context_length: 32768
+onboarding:
+  seen:
+    busy_input_prompt: true

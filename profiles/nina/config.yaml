@@ -1,11 +1,16 @@
-# Profile: nina - Alternative profile
-
-profile:
-  name: nina
-  description: Alternative profile for varied tasks
-
-tools:
-  enabled:
-    - terminal
-    - filesystem
-    - web_search
+model:
+  default: gemini-2.5-pro
+  provider: copilot
+  base_url: https://api.githubcopilot.com
+skills:
+  external_dirs:
+  - ~/.hermes/skills
+approvals:
+  mode: false
+mcp_servers:
+  composio:
+    url: https://connect.composio.dev/mcp
+    headers:
+      x-consumer-api-key: YOUR_COMPOSIO_API_KEY
+    connect_timeout: 60
+    timeout: 180
