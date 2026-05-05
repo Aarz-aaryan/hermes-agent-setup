@@ -1,0 +1,12 @@
+# NOTE: This is a placeholder. The actual config.yaml contains sensitive API keys
+# (Composio API key: ck_...) and other secrets that cannot be committed to a public repo.
+#
+# To restore your setup:
+# 1. Restore this file from your backup or original source
+# 2. Replace YOUR_COMPOSIO_API_KEY with your actual Composio API key
+# 3. Add any other API keys/tokens that were redacted
+#
+# The full configuration includes:
+# - mcp_servers section with Composio connection
+# - profiles section pointing to profile directories
+# - various platform and agent settings
