@@ -1,3 +1,11 @@
-# nina profile config
+# Profile: nina - Alternative profile
 
-# Profile: nina
+profile:
+  name: nina
+  description: Alternative profile for varied tasks
+
+tools:
+  enabled:
+    - terminal
+    - filesystem
+    - web_search

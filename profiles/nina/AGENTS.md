@@ -1,4 +1,13 @@
 # AGENTS.md - Nina Profile Agent Definitions
 
-## Agent Configuration
-Agent definitions for the Nina profile.
+## Primary Agent
+
+**Name:** Nina-Assistant  
+**Role:** Creative and detail-focused tasks
+
+### Configuration
+```yaml
+max_iterations: 75
+timeout: 90
+temperature: 0.65
+```

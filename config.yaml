@@ -1,12 +1,48 @@
-# NOTE: This is a placeholder. The actual config.yaml contains sensitive API keys
-# (Composio API key: ck_...) and other secrets that cannot be committed to a public repo.
+# Root Hermes Agent Configuration
+# Location: /home/Aarz/.hermes/config.yaml
 #
-# To restore your setup:
-# 1. Restore this file from your backup or original source
-# 2. Replace YOUR_COMPOSIO_API_KEY with your actual Composio API key
-# 3. Add any other API keys/tokens that were redacted
+# NOTE: This file contains sensitive API keys and secrets.
+# The following have been REDACTED before committing:
+# - Composio API keys (ck_...)
+# - Any other API tokens
 #
-# The full configuration includes:
-# - mcp_servers section with Composio connection
-# - profiles section pointing to profile directories
-# - various platform and agent settings
+# After restoring, replace YOUR_COMPOSIO_API_KEY with actual keys.
+
+# Composio Configuration
+composio:
+  api_key: YOUR_COMPOSIO_API_KEY
+  connection_active: true
+
+# MCP Servers Configuration
+mcp_servers:
+  github:
+    command: npx
+    args:
+      - -y
+      - @modelcontextprotocol/server-github
+    env:
+      GITHUB_PERSONAL_ACCESS_TOKEN: YOUR_GITHUB_TOKEN
+
+# Profiles Configuration
+profiles:
+  default: aarz
+  path: /home/Aarz/.hermes/profiles
+
+# Platform Configuration
+platforms:
+  telegram:
+    enabled: true
+  discord:
+    enabled: false
+  slack:
+    enabled: false
+
+# Agent Settings
+agents:
+  max_iterations: 100
+  default_timeout: 120
+
+# Logging
+logging:
+  level: info
+  path: /home/Aarz/.hermes/logs

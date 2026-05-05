@@ -1,3 +1,13 @@
-# bymax profile config
+# Profile: bymax - Secondary profile
 
-# Profile: bymax
+# Basic Configuration
+profile:
+  name: bymax
+  description: Secondary profile for general assistance
+
+# Tool Configuration
+tools:
+  enabled:
+    - terminal
+    - filesystem
+    - web_search

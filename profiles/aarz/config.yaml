@@ -1,6 +1,35 @@
-# aarz profile config - contains sensitive API keys (redacted)
-# Composio API key has been replaced with YOUR_COMPOSIO_API_KEY
-# Restore from original and re-add your actual key
-
 # Profile: aarz - Primary user profile
-# Contains Composio MCP connection details
+# Composio API key REDACTED - replace YOUR_COMPOSIO_API_KEY with actual key
+
+# Composio Configuration for this profile
+composio:
+  api_key: YOUR_COMPOSIO_API_KEY
+  connection_active: true
+  account_id: coup_hurricane_dal_analytical
+
+# Agent Configuration
+agent:
+  name: aarz
+  model: claude-sonnet-4-5-20250929
+  max_tokens: 8192
+  temperature: 0.7
+
+# Tool Configuration
+tools:
+  enabled:
+    - github
+    - gmail
+    - google_calendar
+    - notion
+    - terminal
+    - filesystem
+
+# Memory Configuration
+memory:
+  enabled: true
+  persist_directory: /home/Aarz/.hermes/profiles/aarz/memories
+
+# Session Configuration
+sessions:
+  persist: true
+  directory: /home/Aarz/.hermes/profiles/aarz/sessions
