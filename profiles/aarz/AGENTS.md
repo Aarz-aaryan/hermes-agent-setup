@@ -50,8 +50,6 @@ All N subagents run **concurrently** in their own isolated contexts. Results syn
 - **Coder** (`profile="coder"`): Coding specialist. MiniMax-M2.7 + agy/Gemini 3.7 Pro.
 - **Builder** (`profile="builder"`): DevOps/automation specialist.
 - **Tester** (`profile="tester"`): QA/E2E specialist.
-- **Copi**: Copilot CLI, secondary worker, used ONLY when agy is at capacity.
-- **Jarvis**: n8n automation only.
 
 ### Routing rules
 - **Research** (cited, multi-angle) → `delegate_task(profile="scout")`
