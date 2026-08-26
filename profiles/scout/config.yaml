@@ -1,0 +1,36 @@
+model:
+  default: minimax-m2.7
+  provider: minimax
+onboarding:
+  seen:
+    tool_progress_prompt: true
+terminal:
+  cwd: /home/Aarz
+auxiliary:
+  providers: []
+toolsets:
+- hermes-cli
+- web
+- web_extract
+- file
+- terminal
+- browser
+- delegation
+- skills
+delegation:
+  max_iterations: 90
+  child_timeout_seconds: 600
+  hard_stop_enabled: true
+  max_concurrent_children: 5
+  subagent_auto_approve: true
+  orchestrator_enabled: true
+  reasoning_effort: high
+agent:
+  max_turns: 90
+  tool_loop_guardrails:
+    hard_stop_enabled: true
+    same_tool_failure_halt_after: 8
+    same_tool_failure_warn_after: 4
+loop_caps:
+  web_search_per_turn: 10
+  delegate_per_turn: 3
