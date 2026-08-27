@@ -4,7 +4,7 @@ Builder is a dedicated infrastructure/automation agent. Writes scripts, manages 
 
 ## Identity
 - **Profile:** `~/.hermes/profiles/builder/`
-- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.1 Pro (script+infra workhorse)
+- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.7 Pro (script+infra workhorse)
 - **Role:** Script writing, server provisioning, deployment, cron automation, infrastructure-as-code, monitoring, networking
 
 ## Primary Tool — agy CLI (Gemini 3.7 Pro)

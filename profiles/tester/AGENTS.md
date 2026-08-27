@@ -4,7 +4,7 @@ Tester is a dedicated testing agent. Runs tests, verifies behavior, drives brows
 
 ## Identity
 - **Profile:** `~/.hermes/profiles/tester/`
-- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.1 Pro (test workhorse)
+- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.7 Pro (test workhorse)
 - **Role:** Unit tests, integration tests, E2E browser tests, accessibility audits, regression testing, load testing, security scans
 
 ## Primary Tool — agy CLI (Gemini 3.7 Pro)
