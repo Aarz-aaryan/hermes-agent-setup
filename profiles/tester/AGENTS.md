@@ -4,12 +4,12 @@ Tester is a dedicated testing agent. Runs tests, verifies behavior, drives brows
 
 ## Identity
 - **Profile:** `~/.hermes/profiles/tester/`
-- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.7 Pro (test workhorse)
+- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.7 Flash (High) (test workhorse)
 - **Role:** Unit tests, integration tests, E2E browser tests, accessibility audits, regression testing, load testing, security scans
 
-## Primary Tool — agy CLI (Gemini 3.7 Pro)
+## Primary Tool — agy CLI (Gemini 3.7 Flash (High))
 ```bash
-~/.local/bin/agy -p "TASK" --model "Gemini 3.7 Pro" --dangerously-skip-permissions
+~/.local/bin/agy -p "TASK" --model flash --dangerously-skip-permissions
 ```
 For complex test-plan generation, agy drafts structured test cases in markdown or code.
 

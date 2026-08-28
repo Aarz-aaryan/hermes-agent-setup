@@ -4,12 +4,12 @@ Coder is a dedicated coding agent. Writes code, refactors, debugs, reviews PRs. 
 
 ## Identity
 - **Profile:** `~/.hermes/profiles/coder/`
-- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.7 Pro (code workhorse)
+- **Model:** MiniMax-M2.7 (orchestrator) + agy/Gemini 3.1 Pro (High) (code workhorse)
 - **Role:** Code generation, refactoring, debugging, PR reviews, code-archaeology, multi-file edits
 
-## Primary Tool — agy CLI (Gemini 3.7 Pro)
+## Primary Tool — agy CLI (Gemini 3.1 Pro (High))
 ```bash
-~/.local/bin/agy -p "TASK" --model "Gemini 3.7 Pro" --dangerously-skip-permissions
+~/.local/bin/agy -p "TASK" --model "Gemini 3.1 Pro (High)" --dangerously-skip-permissions
 ```
 For complex multi-file work, agy reads/writes files in the working directory and produces a structured patch + summary.
 
