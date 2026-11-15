@@ -1,6 +1,12 @@
-# Hermes Agent Setup
+# Hermes Agent Setup — historical, retired runtime
 
-Complete backup of the Hermes Agent multi-agent system.
+> **Current status (verified 2026-11-15):** Hermes is no longer the active gateway or scheduler. `aarz-agent.service` runs the Pi replacement; `hermes-gateway.service` is inactive and disabled. This repository is historical configuration, **not a current deployment or complete backup**.
+>
+> Start with the [current Pi-era system overview](https://github.com/Aarz-aaryan/control-dashboard/blob/main/docs/current-system/README.md), [Discord/scheduler guide](https://github.com/Aarz-aaryan/control-dashboard/blob/main/docs/current-system/agent-server.md), and [Echo/browser voice/WhatsApp guide](https://github.com/Aarz-aaryan/control-dashboard/blob/main/docs/current-system/voice-and-whatsapp.md).
+>
+> Retained `~/.hermes` paths contain scripts, skills and compatibility assets still used by Pi. Do not delete them blindly. Do not restore or start the old gateway alongside Pi. Historical OpenWA was removed; the separately authorized WhatsApp-Pi service is not the old gateway or scheduled-delivery backend.
+
+The sections below record the **2026-08-25 pre-migration configuration**. Profile/model names and installation instructions are historical, not current operational recommendations.
 
 ## What's included
 - `config.yaml` — root Hermes config
@@ -28,13 +34,16 @@ Sessions, memories, logs, state databases, auth files, caches, and API keys are 
 | tester | MiniMax-M2.7 | QA — tests, browser automation, audits |
 | copi | gpt-5.3-codex | Overflow — GitHub Copilot CLI (agy at capacity) |
 
-## agy CLI (primary workhorse)
+## Historical agy CLI configuration
 - **Version:** 1.1.20 (clean install 2026-08-25)
 - **Default model:** `flash` (Gemini 3.7 Flash)
-- **Invocation:** `~/.local/bin/agy -p "TASK" --dangerously-skip-permissions [--model pro]`
+- **Invocation:** Historical automation bypassed permission prompts. That is not a recommended default; current headless research needs explicit, narrowly scoped tool permissions.
 - **Auth:** OAuth token at `~/.gemini/antigravity-cli/antigravity-oauth-token`
 
-## To restore
+## Historical restore notes — do not execute on the live Pi host
+
+These steps restore the retired Hermes configuration, not the current system. A deliberate rollback requires a separately reviewed recovery plan. They are retained only as historical context.
+
 1. Clone this repo
 2. Copy `config.yaml` -> `~/.hermes/config.yaml`
 3. Copy profile files -> `~/.hermes/profiles/<profile>/`
